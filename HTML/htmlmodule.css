@@ -18,12 +18,39 @@ table,tr,td,th{
     padding: 5px 10px
 }
 
+.tablecard{
+    display: none;
+}
+.card{
+    border: solid 1px black;
+}
+.card>h3{
+    text-align: center;
+    border-bottom: solid 1px black;
+}
+.card>p{
+    border-bottom: solid 1px black;
+}
+
+.note{
+    border-left: solid 5px #d73f3f;
+    padding: 15px 20px;
+    margin: 20px;
+    background-color: antiquewhite;
+}
+
 @media screen and (min-width: 300px){
     .row{
         flex-direction: column;
     }
-    .col{
+    .col, .card{
         flex-basis: 100%;
+    }
+    .tableweb{
+        display: none;
+    }
+    .tablecard{
+        display: block;
     }
 }
 @media screen and (min-width: 900px){
@@ -33,4 +60,11 @@ table,tr,td,th{
     .col{
         flex-basis: 50%;
     }
+    .tablecard{
+        display: none;
+    }
+    .tableweb{
+        display: block;
+    }
+    
 }
