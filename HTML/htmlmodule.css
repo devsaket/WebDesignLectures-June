@@ -38,6 +38,10 @@ table,tr,td,th{
     margin: 20px;
     background-color: antiquewhite;
 }
+.note>span{
+    font-weight: bolder;
+    color: #ea2525;
+}
 
 @media screen and (min-width: 300px){
     .row{
